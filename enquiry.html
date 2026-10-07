@@ -1,4 +1,42 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Enquiry | The Daily Crumb</title><link rel="stylesheet" href="css/style.css"></head><body>
-<header><div class="logo">🍞 The Daily Crumb</div><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="enquiry.html" class="active">Enquiry</a><a href="contact.html">Contact</a></nav></header>
-<main class="container"><h1>Product Enquiry</h1><form id="enquiryForm"><label>Full Name *</label><input type="text" id="name" required><label>Email *</label><input type="email" id="email" required><label>Product *</label><select required><option value="">Select</option><option>Sourdough Bulk</option><option>Custom Cake</option><option>Coffee Beans</option></select><label>Quantity</label><input type="text" placeholder="20 loaves, 1kg cake"><label>Date Needed</label><input type="date"><label>Message</label><textarea rows="4"></textarea><button type="submit" class="btn">Submit Enquiry</button></form></main>
-<footer><p>&copy; 2026 The Daily Crumb | ST10501763</p></footer><script src="js/script.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Enquiry | The Daily Crumb</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="logo">🍞 The Daily Crumb</div><button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+<nav class="nav-menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="enquiry.html" class="active">Enquiry</a><a href="contact.html">Contact</a></nav></header>
+<main class="container">
+<h1>Product Enquiry</h1>
+<form id="enquiryForm" novalidate>
+  <label for="name">Full Name *</label>
+  <input type="text" id="name" required><span class="error-message" id="name-error"></span>
+
+  <label for="email">Email *</label>
+  <input type="email" id="email" required><span class="error-message" id="email-error"></span>
+
+  <label for="product">Product *</label>
+  <select id="product" required><option value="">Select</option><option value="Sourdough Bulk">Sourdough Bulk</option><option value="Custom Cake">Custom Cake</option><option value="Coffee Beans">Coffee Beans</option></select>
+  <span class="error-message" id="product-error"></span>
+
+  <label for="quantity">Quantity *</label>
+  <input type="number" id="quantity" min="1" placeholder="e.g. 20"><span class="error-message" id="quantity-error"></span>
+
+  <label for="date">Date Needed *</label>
+  <input type="date" id="date" required><span class="error-message" id="date-error"></span>
+
+  <label for="message">Message</label><textarea id="message" rows="4"></textarea>
+
+  <button type="submit" class="btn">Submit Enquiry</button>
+  <p id="form-success" class="success-message"></p>
+</form>
+</main>
+<footer>
+  <p>&copy; 2026 The Daily Crumb | ST10501763 ISRAA WILLIAMS</p>
+  <p>
+    <a href="https://kindle-nest-86077705.figma.site" target="_blank">Figma Wireframe</a> | 
+    <a href="https://github.com/IsraaWilliams/TheDailyCrumb-ST10501763-ISRAA-WILLIAMS.git">GitHub Repo</a>
+  </p>
+  <p>Cape Town: Woodstock | Claremont | Sea Point</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
