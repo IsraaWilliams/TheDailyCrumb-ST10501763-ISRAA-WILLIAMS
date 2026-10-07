@@ -1,4 +1,34 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Products | The Daily Crumb</title><link rel="stylesheet" href="css/style.css"></head><body>
-<header><div class="logo">🍞 The Daily Crumb</div><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html" class="active">Products</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav></header>
-<main class="container"><h1>Our Menu</h1><div class="services-grid"><div class="card"><div class="card-body"><h3>Sourdough From R55</h3><p>White, Wholewheat, Rye.</p><a href="enquiry.html" class="btn">Enquire</a></div></div><div class="card"><div class="card-body"><h3>Pastries From R28</h3><p>Croissant, Pain au Choc, Cinnamon.</p><a href="enquiry.html" class="btn">Enquire</a></div></div><div class="card"><div class="card-body"><h3>Coffee From R28</h3><p>Flat White, Cappuccino, Americano.</p><a href="enquiry.html" class="btn">Enquire</a></div></div><div class="card"><div class="card-body"><h3>Custom Cakes From R350</h3><p>48hrs notice needed.</p><a href="enquiry.html" class="btn">Order</a></div></div></div></main>
-<footer><p>&copy; 2026 The Daily Crumb | ST10501763</p></footer><script src="js/script.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Products | The Daily Crumb</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="logo">🍞 The Daily Crumb</div><button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+<nav class="nav-menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html" class="active">Products</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></nav></header>
+<main class="container">
+<h1>Our Menu</h1>
+<!-- Filtering buttons - Part 3 requirement -->
+<div class="filter-buttons">
+  <button class="btn-outline filter-btn active" data-filter="all">All</button>
+  <button class="btn-outline filter-btn" data-filter="bread">Bread</button>
+  <button class="btn-outline filter-btn" data-filter="pastry">Pastries</button>
+  <button class="btn-outline filter-btn" data-filter="coffee">Coffee</button>
+  <button class="btn-outline filter-btn" data-filter="cakes">Cakes</button>
+</div>
+<div class="services-grid" id="product-grid">
+  <div class="card" data-category="bread"><div class="card-body"><h3>Sourdough From R55</h3><p>White, Wholewheat, Rye.</p><a href="enquiry.html" class="btn">Enquire</a></div></div>
+  <div class="card" data-category="pastry"><div class="card-body"><h3>Pastries From R28</h3><p>Croissant, Pain au Choc, Cinnamon.</p><a href="enquiry.html" class="btn">Enquire</a></div></div>
+  <div class="card" data-category="coffee"><div class="card-body"><h3>Coffee From R28</h3><p>Flat White, Cappuccino, Americano.</p><a href="enquiry.html" class="btn">Enquire</a></div></div>
+  <div class="card" data-category="cakes"><div class="card-body"><h3>Custom Cakes From R350</h3><p>48hrs notice needed.</p><a href="enquiry.html" class="btn">Order</a></div></div>
+</div>
+</main>
+<footer>
+  <p>&copy; 2026 The Daily Crumb | ST10501763 ISRAA WILLIAMS</p>
+  <p>
+    <a href="https://kindle-nest-86077705.figma.site" target="_blank">Figma Wireframe</a> | 
+    <a href="https://github.com/IsraaWilliams/TheDailyCrumb-ST10501763-ISRAA-WILLIAMS.git">GitHub Repo</a>
+  </p>
+  <p>Cape Town: Woodstock | Claremont | Sea Point</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
