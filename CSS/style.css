@@ -2,7 +2,7 @@
 :root{--primary:#8B4513;--accent:#D2691E;--light:#FFF8F0;--text:#3E2723;--white:#fff;}
 html{font-size:100%;}
 body{font-family:'Lora',serif;font-size:1rem;line-height:1.7;color:var(--text);background:var(--light);}
-h1,h2,h3{font-family:'Poppins',sans-serif;line-height:1.2;}
+h1,h2,h3{font-family:'Poppins',sans-serif;line-height:1.2;} 
 h1{font-size:2.5rem;font-weight:700;color:var(--primary);margin:0.5em 0;}
 h2{font-size:2rem;margin:1em 0 0.5em;}
 h3{font-size:1.5rem;}
