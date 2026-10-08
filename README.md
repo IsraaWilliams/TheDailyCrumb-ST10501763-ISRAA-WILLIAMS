@@ -3,7 +3,7 @@
 **Module:** WEDE5020 - Final Submission 2026
 
 ### Links
-- **Live Site:** thedailycrumb1.netlify.app
+- **Live Site:** https://thedailycrumb1.netlify.app
 - **GitHub Repo:** https://github.com/israawilliams/TheDailyCrumb-ST10501763-ISRAA-WILLIAMS
 - **Figma Wireframe:** https://kindle-nest-86077705.figma.site
 
